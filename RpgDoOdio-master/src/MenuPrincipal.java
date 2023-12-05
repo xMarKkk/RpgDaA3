@@ -1,6 +1,8 @@
 package src;
 
+
 import classes.Jogador;
+import classes.Personagens;
 import inventario.Inventario;
 import inventario.MenuInventario;
 import locais.taverna.Taverna;
@@ -13,8 +15,9 @@ public class MenuPrincipal {
     Scanner ler = new Scanner(System.in);
     Inventario i = new Inventario();
     MenuInventario inv = new MenuInventario();
-    Jogador jogador = new Jogador();
-    Funcoes f = new Funcoes(jogador);
+    Personagens p = new Personagens();
+    Jogador j = new Jogador();
+
     boolean continuar = true;
 
     public int menu() {
@@ -42,7 +45,7 @@ public class MenuPrincipal {
 
                     break;
                 case 4:
-                f.mostrarStatus();
+                j.mostrarStatus();
                     break;
                 case 5:
                     break;

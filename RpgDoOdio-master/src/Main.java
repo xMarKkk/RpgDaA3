@@ -1,17 +1,20 @@
 package src;
-//import combate.Batalha;
+import combate.Batalha;
 import classes.Jogador;
+import classes.Personagens;
+import combate.*;
 import inventario.Inventario;
 import src.Funcoes;
 import src.MenuPrincipal;
 
 public class Main {
     public static void main(String[] args){
-       Jogador jogador = new Jogador();
-        Funcoes f = new Funcoes(jogador);
+       Personagens jogador = new Personagens();
+        Funcoes f = new Funcoes();
         MenuPrincipal m = new MenuPrincipal();
         Inventario i = new Inventario();
-       // Batalha b = new Batalha();
+       Batalha b = new Batalha();
+
         System.out.println("ola aventureiros,  bem vindos a eldorian!");
         System.out.println();
 
@@ -19,7 +22,6 @@ public class Main {
        f.escolherClasse();
         m.menu();
 
-        //i.inventario();
 
 
 

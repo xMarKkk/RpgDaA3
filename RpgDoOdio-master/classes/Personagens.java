@@ -1,4 +1,5 @@
 package classes;
+import src.Funcoes;
 
 public class Personagens {
      int vida;
@@ -12,22 +13,7 @@ public class Personagens {
      String nome;
      String missoes;
 
-    // Construtor
-    public Personagens(String nome, int vida, int armadura, int ataque, int mana, int velocidade, int dinheiro, int experiencia, int vidaMax, String missoes) {
-        this.nome = nome;
-        this.vida = vida;
-        this.armadura = armadura;
-        this.ataque = ataque;
-        this.mana = mana;
-        this.velocidade = velocidade;
-        this.dinheiro = dinheiro;
-        this.experiencia = experiencia;
-        this.vidaMax = vidaMax;
-        this.missoes = missoes;
-    }
 
-    public Personagens() {
-    }
 
 
     // Getters e Setters para cada atributo
@@ -113,5 +99,25 @@ public class Personagens {
 
 
 
+
+
+
+       /* Personagens personagemEscolhido;
+
+
+        public void escolherPersonagem(Personagens personagem) {
+            personagemEscolhido = personagem;
+        }
+
+        public Personagens getPersonagemEscolhido() {
+            return personagemEscolhido;
+        }
+
+        public void setPersonagemEscolhido(Personagens personagemEscolhido) {
+            this.personagemEscolhido = personagemEscolhido;
+
+
+
+    }*/
 }
 
