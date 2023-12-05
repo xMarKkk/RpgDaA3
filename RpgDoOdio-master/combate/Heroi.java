@@ -1,5 +1,5 @@
 package combate;
-class Heroi {
+public class Heroi {
     String nomeHeroi;
     Double vidaHeroi;
     Double danoHeroiFraco;
